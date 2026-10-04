@@ -1,0 +1,11 @@
+{
+  "name": "덕심",
+  "short_name": "덕심",
+  "description": "최애 D-day와 덕질 가계부",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#12102A",
+  "theme_color": "#12102A",
+  "lang": "ko",
+  "icons": [{ "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>덕심 — 최애 D-day와 덕질 가계부</title>
+  <meta name="description" content="최애 생일·데뷔·공연 D-day를 홈 화면에, 티켓·굿즈·포카 지출은 덕질 가계부로. 한 달이 끝나면 덕질 결산 티켓 한 장.">
+  <meta name="theme-color" content="#12102A">
+  <meta property="og:title" content="덕심 — 최애 D-day와 덕질 가계부">
+  <meta property="og:description" content="아이돌·배우·뮤지컬·야구·애니 누구든. 응원봉 색으로 물드는 D-day 포카와 이번 달 덕질 결산 티켓.">
+  <meta property="og:image" content="https://rlawnstlr001-design.github.io/deoksim/og.png">
+  <meta property="og:url" content="https://rlawnstlr001-design.github.io/deoksim/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=202610041102">
+</head>
+<body>
+  <div class="stage" aria-hidden="true"><i></i><i></i><i></i></div>
+  <header class="top">
+    <a class="brand" href="#/" aria-label="덕심 처음으로">
+      <svg class="stick" viewBox="0 0 20 40" aria-hidden="true"><rect x="7" y="22" width="6" height="17" rx="2.5" fill="#3A3560"/><ellipse cx="10" cy="12" rx="8.5" ry="10.5" fill="var(--glow)"/><ellipse cx="10" cy="12" rx="4" ry="5.5" fill="#fff" opacity=".75"/></svg>
+      <span class="brand-name">덕심</span>
+    </a>
+    <button class="icon-btn" id="btn-settings" aria-label="설정">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1"/></svg>
+    </button>
+  </header>
+
+  <main id="view" tabindex="-1"></main>
+
+  <nav class="tabbar" aria-label="화면">
+    <a href="#/" data-tab="home"><span class="ti">💡</span>최애</a>
+    <a href="#/book" data-tab="book"><span class="ti">🎫</span>가계부</a>
+    <a href="#/report" data-tab="report"><span class="ti">🎟️</span>결산</a>
+  </nav>
+  <button class="fab" id="fab" aria-label="덕질 지출 기록">＋<span>기록</span></button>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+  <div id="sheet-root"></div>
+
+  <script src="config.js?v=202610041102"></script>
+  <script type="module" src="js/app.js?v=202610041102"></script>
+</body>
+</html>
